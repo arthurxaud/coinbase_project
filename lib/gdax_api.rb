@@ -1,0 +1,7 @@
+require 'json'
+require 'gdax_api/api'
+require 'gdax_api/order'
+require 'gdax_api/request'
+require 'gdax_api/order_book/standard_order_book'
+require 'gdax_api/order_book/inverted_order_book'
+require 'gdax_api/request/order_book_request'
