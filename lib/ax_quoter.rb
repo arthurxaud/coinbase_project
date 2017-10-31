@@ -1,7 +1,0 @@
-require 'gdax_api'
-require 'ax_quoter/quoter'
-require 'ax_quoter/calculator'
-require 'ax_quoter/error_handler'
-require 'ax_quoter/helpers/render_error'
-require 'ax_quoter/helpers/precision'
-require 'ax_quoter/errors/amount_exceeded_error'

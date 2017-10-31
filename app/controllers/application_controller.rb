@@ -6,8 +6,14 @@ class ApplicationController < ActionController::Base
   before_action :ensure_json_request
 
   def ensure_json_request
-    return if request.format == :json
+    return if json_request?
     render json: { error: 'not acceptable', status: 406,
                    message: 'format not accepable' }.to_json, status: 406
+  end
+
+  protected
+
+  def json_request?
+    request.format.json?
   end
 end

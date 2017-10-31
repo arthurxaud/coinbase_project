@@ -21,6 +21,5 @@ module CoinbaseProject
     # config.i18n.default_locale = :de
 
     require './lib/gdax_api'
-    require './lib/ax_quoter'
   end
 end
